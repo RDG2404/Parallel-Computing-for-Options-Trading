@@ -6,3 +6,5 @@ A European-type call/put option is a contract giving the right, but not the obli
 We compare the processing times required for identifying the optimal kernel bandwidths in the non-parametric estimation of the RND for both sequential and parallel computing algorithms created using C++. SP500 and Volatility Index (VIX) values between April 18-20, 2018 are used with sample size of 9785 and 1456 respectively to generate the RNDs. Minimum grid search methods along with tailor-made Cross Validation (CV) algorithms are used to identify the optimal bandwidths for the same. 
 
 We can see that as the sample size is increased, computational times exceed 48 hrs which would invalidate any results in the context of assessing real-time financial risk. For this reason, parallel computing algorithms have been developed in CUDA/C++ which are expected to achieve sppedups of upto 70x. 
+
+This repository contains the CUDA code for the same, and was run using gcc compiler on NVIDIA Tesla V100 GPU, the file "Report_RND Options Trading.pdf" lists the methodology, results and conclusions of this project in detail. 
